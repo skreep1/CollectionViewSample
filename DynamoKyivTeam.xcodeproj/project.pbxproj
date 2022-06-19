@@ -9,13 +9,16 @@
 /* Begin PBXBuildFile section */
 		4ACA4067285C84A90093252A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACA4066285C84A90093252A /* AppDelegate.swift */; };
 		4ACA4069285C84A90093252A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACA4068285C84A90093252A /* SceneDelegate.swift */; };
-		4ACA406B285C84A90093252A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACA406A285C84A90093252A /* ViewController.swift */; };
 		4ACA406E285C84A90093252A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4ACA406C285C84A90093252A /* Main.storyboard */; };
 		4ACA4070285C84A90093252A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4ACA406F285C84A90093252A /* Assets.xcassets */; };
 		4ACA4073285C84A90093252A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4ACA4071285C84A90093252A /* LaunchScreen.storyboard */; };
 		4ACA407E285C84AA0093252A /* DynamoKyivTeamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACA407D285C84AA0093252A /* DynamoKyivTeamTests.swift */; };
 		4ACA4088285C84AA0093252A /* DynamoKyivTeamUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACA4087285C84AA0093252A /* DynamoKyivTeamUITests.swift */; };
 		4ACA408A285C84AA0093252A /* DynamoKyivTeamUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACA4089285C84AA0093252A /* DynamoKyivTeamUITestsLaunchTests.swift */; };
+		4ACA4099285C85700093252A /* TeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACA4098285C85700093252A /* TeamViewController.swift */; };
+		4ACA409D285C88230093252A /* PlayerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACA409B285C88230093252A /* PlayerCell.swift */; };
+		4ACA409E285C88230093252A /* PlayerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4ACA409C285C88230093252A /* PlayerCell.xib */; };
+		4ACA40A0285CC02F0093252A /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACA409F285CC02F0093252A /* Team.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +42,6 @@
 		4ACA4063285C84A90093252A /* DynamoKyivTeam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DynamoKyivTeam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4ACA4066285C84A90093252A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4ACA4068285C84A90093252A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4ACA406A285C84A90093252A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4ACA406D285C84A90093252A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4ACA406F285C84A90093252A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4ACA4072285C84A90093252A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +51,10 @@
 		4ACA4083285C84AA0093252A /* DynamoKyivTeamUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DynamoKyivTeamUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4ACA4087285C84AA0093252A /* DynamoKyivTeamUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamoKyivTeamUITests.swift; sourceTree = "<group>"; };
 		4ACA4089285C84AA0093252A /* DynamoKyivTeamUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamoKyivTeamUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4ACA4098285C85700093252A /* TeamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamViewController.swift; sourceTree = "<group>"; };
+		4ACA409B285C88230093252A /* PlayerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerCell.swift; sourceTree = "<group>"; };
+		4ACA409C285C88230093252A /* PlayerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayerCell.xib; sourceTree = "<group>"; };
+		4ACA409F285CC02F0093252A /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +105,15 @@
 		4ACA4065285C84A90093252A /* DynamoKyivTeam */ = {
 			isa = PBXGroup;
 			children = (
+				4ACA409A285C87C80093252A /* TeamCells */,
 				4ACA4066285C84A90093252A /* AppDelegate.swift */,
 				4ACA4068285C84A90093252A /* SceneDelegate.swift */,
-				4ACA406A285C84A90093252A /* ViewController.swift */,
 				4ACA406C285C84A90093252A /* Main.storyboard */,
 				4ACA406F285C84A90093252A /* Assets.xcassets */,
 				4ACA4071285C84A90093252A /* LaunchScreen.storyboard */,
 				4ACA4074285C84A90093252A /* Info.plist */,
+				4ACA4098285C85700093252A /* TeamViewController.swift */,
+				4ACA409F285CC02F0093252A /* Team.swift */,
 			);
 			path = DynamoKyivTeam;
 			sourceTree = "<group>";
@@ -125,6 +133,15 @@
 				4ACA4089285C84AA0093252A /* DynamoKyivTeamUITestsLaunchTests.swift */,
 			);
 			path = DynamoKyivTeamUITests;
+			sourceTree = "<group>";
+		};
+		4ACA409A285C87C80093252A /* TeamCells */ = {
+			isa = PBXGroup;
+			children = (
+				4ACA409B285C88230093252A /* PlayerCell.swift */,
+				4ACA409C285C88230093252A /* PlayerCell.xib */,
+			);
+			path = TeamCells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +248,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4ACA409E285C88230093252A /* PlayerCell.xib in Resources */,
 				4ACA4073285C84A90093252A /* LaunchScreen.storyboard in Resources */,
 				4ACA4070285C84A90093252A /* Assets.xcassets in Resources */,
 				4ACA406E285C84A90093252A /* Main.storyboard in Resources */,
@@ -258,9 +276,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4ACA406B285C84A90093252A /* ViewController.swift in Sources */,
+				4ACA409D285C88230093252A /* PlayerCell.swift in Sources */,
+				4ACA4099285C85700093252A /* TeamViewController.swift in Sources */,
 				4ACA4067285C84A90093252A /* AppDelegate.swift in Sources */,
 				4ACA4069285C84A90093252A /* SceneDelegate.swift in Sources */,
+				4ACA40A0285CC02F0093252A /* Team.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
